@@ -1,0 +1,15 @@
+- Map.js: This file exports the Map class which creates and manages the game world. It has a constructor that takes in the width and height of the map and creates a 2D array of MapObject instances. It also has methods for getting and setting the value of a specific location on the map and for rendering the map to the console.
+
+- MapObjects.js: This file exports the MapObject class which represents objects that can be placed on the game map. It has a constructor that takes in a terrain value (either specified by the user or randomly generated) and a type value (either "undiscovered", "item", or "enemy" by default). It also has a describe method that randomly prints a description of the object.
+
+- ItemObject.js: This file exports the ItemObject class which extends the MapObject class and represents items that can be found on the game map. It has a constructor that takes in a terrain value and a stats object representing the attack, defense, and HP of the item. It also has getName and getStats methods for getting the name and stats of the item, and a describe method for printing a description of the item.
+
+- EnemyObject.js: This file exports the EnemyObject class which extends the MapObject class and represents enemies that can be encountered on the game map. It has a constructor that takes in a terrain value and a stats object representing the attack, defense, and HP of the enemy. It also has getName and getStats methods for getting the name and stats of the enemy, and a describe method for printing a description of the enemy.
+
+- Player.js: This file exports the Player class which represents the player in the game. It has a constructor that takes in a name value and a stats object representing the attack, defense, and HP of the player. It also has getName and getStats methods for getting the name and stats of the player, and an addToStats method for updating the player's stats. Additionally, it has a describe method for printing a description of the player's current stats.
+
+- playerPrompts.js: This file exports a promptPlayerForDirection function which uses the inquirer library to prompt the user for a direction to move in.
+
+- playTheGame.js: This file creates a new instance of the Game class (which extends the Map class) with a width and height of 10. This effectively starts the game and allows the user to explore the game world.
+
+- package.json: This file specifies the name, version, description, main file, scripts, keywords, author, license, and dependencies for the project. The dependencies section specifies the inquirer library as a dependency for the project.

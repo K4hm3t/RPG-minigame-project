@@ -1,0 +1,16 @@
+{
+  "name": "adventure-rpg-game-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^9.2.0"
+  }
+}
